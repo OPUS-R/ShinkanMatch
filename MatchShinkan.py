@@ -10,7 +10,7 @@ from openpyxl.styles import Alignment
 
 #ログ出力
 def log(message):
-    with open("log.txt", "a", encoding="utf-8") as f:#保存場所#
+    with open("log.txt", "a", encoding="utf-8") as f:#保存場所
         f.write(f"[{datetime.datetime.now()}] {message}\n")
 
 #希望楽器データ成形
