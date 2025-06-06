@@ -201,7 +201,7 @@ def match(teachers, students, max_per_instrument=1, drum_exclusive=True,
                             drum_count = sum(1 for m in result[slot_key] if m["teacher"]["instrument"] == "ドラム")
                             if drum_count >= drum_max_per_slot:
                                 continue
-                            #ドラムがなるべく1人になるように割り当てる
+                            #ドラムがなるべく1人になるように割り当てる#
                                 if len(result[slot_key]) < max_pair:
                                     continue
 
